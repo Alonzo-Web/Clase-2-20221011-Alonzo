@@ -13,31 +13,23 @@ prompt.get(["numero1", "numero2", "numero3" ], function(error, resultado) {
     let numero2 = +resultado.numero2 // Obtener valores pedidos al usuario
     let numero3 = +resultado.numero3 // Obtener valores pedidos al usuario
     
-    if (numero1 > numero2) {
-        console.log("variable 'numero1' es mayor que variable 'numero2' y ,numero3'")
-    } 
-    if (numero1 < numero2) {
-        console.log("variable 'numero2' es mayor que variable 'numero1'y 'numero3'")
+    if (numero1 > numero2){
+        console.log("Variable'numero1' es mayor que 'numero2'")
     }
-    if (numero3 > numero2) {
-        console.log("variable 'numero3' es mayor que variable 'numero2' y numero1")
-    } 
-    if (numero3 < numero2) {
-        console.log("variable 'numero2' es mayor que variable 'numero3' y 'numero1'")
+    if (numero1 < numero2) {
+        console.log("Variable'numero2' es mayor que 'numero1")
     }
     if (numero1 > numero3) {
-        console.log("variable 'numero1' es mayor que variable 'numero3' y 'numero2' ")
-    } 
+        console.log("Variable'numero1' es mayor que 'numero3")
+    }
     if (numero1 < numero3) {
-        console.log("variable 'numero3' es mayor que variable 'numero1' y 'numero2' ")
+        console.log("Variable'numero3' es mayor que 'numero1")
     }
     if (numero1 === numero2) {
         console.log("variable 'numero1' es igual que variable 'numero2'")
-    }
-    
-    else {
+    } else {
         console.log("Ocurrio un error")
     }
-    
+  
     // Fin de operaciones
 });
