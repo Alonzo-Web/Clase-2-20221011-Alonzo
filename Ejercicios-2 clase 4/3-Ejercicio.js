@@ -5,13 +5,16 @@ const prompt = require('prompt');
     prompt.start();
 
     console.log('Escriba una frase');
+
 prompt.get(['frase'],function(error,resultado) {
+
     let frase = resultado.frase;
-    let conteoVocales = +0;
+    let conteoVocales = 0;
 
     for(let letras = 0; letras < frase.length; letras++) {
-        if(frase[letras] === 'a'){
-            console.log("Esta frase tiene",+conteoVocales, frase[letras])
+        if(frase[letras] === 'a' || frase[letras] === 'e' || frase[letras] === 'i' || frase[letras] === 'o' || frase[letras] === 'u' ){
+            conteoVocales++
         }
     }
-});  // proceso
+    console.log("Esta frase tiene",+''+ conteoVocales +''+'' ,"vocal" )
+}); 
