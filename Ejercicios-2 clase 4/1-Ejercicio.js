@@ -3,7 +3,7 @@ const prompt = require('prompt');
 
 prompt.start()
 
-console.log("Escribir una frase");
+console.log("Escriba una frase");
 
 prompt.get(["valor"], function (error, resultado) {
     let conteoLetraA = 0;
