@@ -16,5 +16,5 @@ prompt.get(['frase'],function(error,resultado) {
             conteoVocales++
         }
     }
-    console.log("Esta frase tiene",+''+ conteoVocales +''+'' ,"vocal" )
+    console.log("Esta frase tiene "+ conteoVocales +" vocal" )
 }); 
