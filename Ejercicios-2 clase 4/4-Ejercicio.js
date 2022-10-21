@@ -5,5 +5,6 @@ const prompt = require('prompt');
 prompt.start();
 
 prompt.get(['frase'],function(error,resultado){
+    
     //en proceso
-})
+});
