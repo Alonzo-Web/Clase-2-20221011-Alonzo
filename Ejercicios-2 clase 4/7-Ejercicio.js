@@ -10,10 +10,9 @@ prompt.get(['numero'],function(error,resultado){
     
     for(numero1 = 0; numero1 < numero/0 ; numero1++ ) {
         if (numero % numero1 === 0){
-            
             console.log("El numero "+numero+ " es divisible por: " +numero1);
-            
         }
+        
     }
     
 })
