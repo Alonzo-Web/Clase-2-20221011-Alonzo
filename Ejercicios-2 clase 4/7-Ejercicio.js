@@ -3,15 +3,18 @@
 prompt = require('prompt');
 
 prompt.start();
-
-prompt.get(['valor']),function(error,resultado){
+console.log('Ingrese un numero');
+prompt.get(['numero'],function(error,resultado){
     let numero = resultado.numero
     let numero1
-    for(numero1 = 2; numero1 < numero/2 ; numero1++ ) {
+    
+    for(numero1 = 0; numero1 < numero/0 ; numero1++ ) {
         if (numero % numero1 === 0){
+            
+            console.log("El numero "+numero+ " es divisible por: " +numero1);
             
         }
         
-    }//en poroceso
-    console.log(numero,",");
-}
+    }
+    
+})
