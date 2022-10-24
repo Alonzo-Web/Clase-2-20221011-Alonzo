@@ -6,13 +6,12 @@ prompt.start();
 
 prompt.get(['numero']),function(error,resultado){
     let numero = resultado.numero
-    let numero1 = 0 ;
-    for(numero = 2; numero < numero1 / 2 ; numero++ ) {
-        if (numero === 0){
-            numero1++
-            
+    let numero1
+    for(numero1 = 2; numero1 < numero/2 ; numero1++ ) {
+        if (numero % numero1 === 0){
+            console.log("El numero es divisible" + numero1)
         }
-        console.log("El numero" +numero1+ "es divisible",numero)
+        
     }//en poroceso
-    
+   
 }
