@@ -10,7 +10,9 @@ prompt.get(['numero']),function(error,resultado){
     for(numero = 2; numero < numero1 / 2 ; numero++ ) {
         if (numero === 0){
             numero1++
-            console.log("El numero" +numero1+ "es divisible",numero)
+            
         }
+        console.log("El numero" +numero1+ "es divisible",numero)
     }//en poroceso
+    
 }
