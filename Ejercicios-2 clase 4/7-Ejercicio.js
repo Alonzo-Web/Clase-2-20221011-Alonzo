@@ -8,7 +8,7 @@ prompt.get(['numero'],function(error,resultado){
     let numero = resultado.numero;
     let numero1;
     
-    for(numero1 = 0; numero1 < numero/0 ; numero1++ ) {
+    for(numero1 = 0; numero1 <= numero ; numero1++ ) {
         if (numero % numero1 === 0){
             console.log("El numero "+numero+ " es divisible por: " +numero1);
         }
