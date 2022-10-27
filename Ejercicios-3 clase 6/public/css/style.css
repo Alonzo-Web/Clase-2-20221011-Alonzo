@@ -2,6 +2,11 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --pirmario: #56d5da;
+    --secundario: #7e1688;
+    --parrafos: #8d3428;
+    --blanco: #FFFFFF;
+
+
 }
 html {
     background-color: var(--pirmario);
@@ -17,32 +22,55 @@ body {
     line-height: 2;
 }
 
-h1,h2,h3,h4 {
+h1,h2{
     font-family: var(--fuenteHeading);
     line-height: 1.2;
 }
 h1 {
-    font-size: 4.8rem;
+    font-size: 7rem;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
-h3{
-    font-size: 3.2rem;
-}
-h4 {
-    font-size: 2.8rem;
-}
-img {
-    max-width: 100%;
+
+img{
+    width: 20%;
+    
 }
 .header{
-    background-image: url(../img/javascr.jpg);
-    height: 60rem;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 450px;
-    
+text-align: center;
 
+
+
+}
+.pregunta{
+    font-family: var(--fuenteHeading);
+    color: var(--secundario);
+}
+.parrafo{
+color: var(--parrafos) ;
+font-size: 2.5rem;
+}
+.informacion{
+    text-align: center;
+
+}
+li{
+    list-style: none;
+    color: var(--parrafos);
+    font-size: 2.5rem;
+}
+.caracteristica{
+    font-family: var(--fuenteHeading);
+    color: var(--secundario);
+}
+.footer{
+   text-align: center;
+   font-size: 3rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-top: 0 auto;
+   background-color: var(--secundario);
+   margin: 0 auto;
+   color: var(--blanco);
+    
 }
