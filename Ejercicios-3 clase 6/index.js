@@ -1,10 +1,6 @@
 const express = require('express');
-/* const { dirname } = require('node:path/posix'); */
-const app = express()
 
-/* app.get('/', function (req, res) {
-  res.send('Hello World')
-}) */
+const app = express()
 
 app.use(express.static(__dirname + '/public'));
 
