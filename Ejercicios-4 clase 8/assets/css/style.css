@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2? family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
+
+html{
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background: #e96443;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443); 
+}
+.contenido{
+    margin-top: 60px;
+    background-color: white;
+    width: 80rem;
+    margin: 4rem auto;
+    -webkit-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    
+}
+.header{
+    text-align: center;
+    color: white;
+    background-color: #38b2ac;
+    font-size: 9px;
+    padding: 1px;
+    text-transform: uppercase;
+    
+}
+.contenedor-campo{
+    
+}
+#mi-formulario{
+   margin-bottom: 1rem;
+   padding: 2rem;
+}
+
+.btn{
+    background-color: #38b2ac;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+.grupo-input{
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.grupo-input [type="number"] {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    width: 30%;
+    margin: 1rem;
+    border: none;
+    background-color: #f5fafc;
+   
+    
+}
+
+
