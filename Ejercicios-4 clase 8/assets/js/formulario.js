@@ -14,6 +14,41 @@ const accionEvento = (e) => {
     pantalla.style.width = ancho + "px"
     pantalla.style.height = altura + "px"
     pantalla.style.background = color
+
+    if (altura === '' || ancho === '' || color === ''){
+       mostrarMensaje('Todos los campos son obligatorios', 'error');
+       return;
+    }
+
+    mostrarMensaje('Aplicado', 'correcto');
+}
+mostrarMensaje = (mensaje, tipo) => {
+  
+    const div = document.createElement('div');
+
+    if (tipo === 'error') {
+        div.classList.add('error');
+    }else{
+        div.classList.add('correcto');
+    }
+
+
+    div.classList.add('mensaje', 'mt-10');
+    div.textContent = mensaje;
+
+     // Para que no se repita la alerta
+     const alerta = document.querySelector('.mt-10');
+     if(alerta) {
+         alerta.remove();
+     }
+
+
+    //insertar en html
+    const miFormulario = document.getElementById("mi-formulario");
+    miFormulario.insertBefore(div, document.getElementById("mensaje"));
+    setTimeout(()=>{
+        div.remove();
+    },3000);
 }
 
 

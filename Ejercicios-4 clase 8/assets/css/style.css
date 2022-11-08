@@ -81,3 +81,20 @@ body {
         font-size: 1rem;
     }
 }
+
+.error{
+    background-color: #e9d6ce;
+    border: solid #e96443;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e96443;
+}
+.correcto {
+    background-color: #b6ebba;
+    border: 1px solid #358b86;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #46c060;
+}
