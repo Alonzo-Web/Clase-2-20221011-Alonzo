@@ -13,14 +13,15 @@ const accionEvento = (e) => {
     const pantalla = document.getElementById("pantalla")
     pantalla.style.width = ancho + "px"
     pantalla.style.height = altura + "px"
-    pantalla.style.background = color
+   
 
-    if (altura === '' || ancho === '' || color === ''){
+    if (altura === '' || ancho === ''){
        mostrarMensaje('Todos los campos son obligatorios', 'error');
        return;
     }
 
     mostrarMensaje('Aplicado', 'correcto');
+    pantalla.style.background = color
 }
 mostrarMensaje = (mensaje, tipo) => {
   
