@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2? family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
+
+html{
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    font-size: 16px;
+    /* padding: 0; */
+    margin: 0;
+}
+.header{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+}
+.contenedor{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: #317c99;
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+   
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.navegacion-principal a:hover{
+    background-color: #e4ee53;
+    color: #000000;
+}
+.conten{
+    display: flex;
+}
+.sec2{
+    display: flex;
+    align-items: flex-end;
+}
+.sec3{
+    display: flex;
+    align-items: flex-end;
+}
+
+
