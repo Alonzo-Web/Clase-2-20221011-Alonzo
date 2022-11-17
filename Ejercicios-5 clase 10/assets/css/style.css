@@ -46,21 +46,24 @@ body{
 }
 .conten{
     display: flex;
-    gap: 0.5rem;
-    
     
 }
 .sec{
-    
+    padding: 10px;
 }
 .seccion1{
     background-color: #e4ee53;
+    width: 50rem;
+    height: 45rem;
 }
 .seccion2{
     background-color: #ce5007;
+    align-self: flex-start;
 }
 .seccion3{
     background-color: #5c3d8d;
+    align-self:flex-end;
+
 }
 /* .footer{
     background-color: #ee53d4;
