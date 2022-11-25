@@ -77,7 +77,7 @@ label{
     cursor: pointer;
 }
 #btn-menu{
-    /* display: none; */
+    display: none;
 }
 .glyphicon-remove{
     position: relative;
