@@ -20,31 +20,70 @@ label{
 }
 .aside-menu{
     background-color: #1d2951;
-    width: 250px;
+    width: 260px;
     height: 100%;
     position: fixed;
+    opacity: 0;
+    visibility: hidden;
 
+}
+/* para que se muestre el menu */
+#btn-menu:checked ~ .aside-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.aside-menu center h2{
+    color: #ffffff;
+    margin-top: 5rem;
+}
+.link{
+    margin-top: 5rem;
 }
 .aside-menu a {
     display: block;
     line-height: 60px;
-    color: #ffffff;
+    
     transition: 0.5s;
     font-size: 20px;
 
+}
+.aside-menu span{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #ffffff;
 }
 .aside-menu center img{
     height: 120px;
     width: 120px;
     border-radius: 50%;
     margin-top: 30px;
+    border: 3px solid #ffffff;
 }
 .aside-menu a:hover{
     background: #1d36a5;
-    padding-left: 20px;
+    padding-left: 10px;
 }
-.glyphicon{
+.glyphicon-question-sign,
+.glyphicon-file,
+.glyphicon-th,
+.glyphicon-education{
     font-size: 20px;
     margin-left: 20px;
     color: #ffffff;
+}
+/* ocultar menu */
+.glyphicon-list{
+    margin-left: 50px;
+    cursor: pointer;
+}
+#btn-menu{
+    /* display: none; */
+}
+.glyphicon-remove{
+    position: relative;
+    left: 18rem;
+    top: 10rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
 }
