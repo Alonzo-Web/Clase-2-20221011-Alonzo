@@ -1,83 +1,110 @@
-:root {
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
-    --pirmario: #56d5da;
-    --secundario: #7e1688;
-    --parrafos: #8d3428;
-    --blanco: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2? family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
 
+html{
+    font-family: 'PT Sans', sans-serif;
+}
 
-}
-html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* se usa para que 1 rem = 10 px */
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 body {
-    background-color: var(--pirmario);
-    margin: 0;
-    padding: 0;
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 2;
+    background: #e96443;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443); 
 }
 
-h1,h2{
-    font-family: var(--fuenteHeading);
-    line-height: 1.2;
-}
-h1 {
-    font-size: 7rem;
-}
-h2 {
-    font-size: 5rem;
-}
 
-div img{
-    margin-left: 11%;
-    margin-top: 4rem;
-    width: 23%;
-    border-radius: 5rem;
-    border: 1px solid var(--secundario);
-}
-.header{
-text-align: center;
-
-}
-.pregunta{
-    font-family: var(--fuenteHeading);
-    color: var(--secundario);
-}
-.parrafo{
-color: var(--parrafos) ;
-font-size: 2.5rem;
-}
-.informacion{
-    text-align: center;
-
-}
-li{
-    list-style: none;
-    color: var(--parrafos);
-    font-size: 2.5rem;
-}
-.caracteristica{
-    font-family: var(--fuenteHeading);
-    color: var(--secundario);
-}
-.footer{
-   text-align: center;
-   font-size: 3rem;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   padding-top: 0 auto;
-   background-color: var(--secundario);
-   margin: 0 auto;
-   color: var(--blanco);
+.titulo{
+    color: white;
+    background-color: #38b2ac;
+    font-weight: 700;
+    font-size: 3rem;
     
 }
+#mi-formulario{
+    text-align: center;
+    margin-top: 60px;
+    background-color: white;
+    width: 100rem;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+}
+#mi-formulario fieldset{
+    border: none;
+
+}
+
+.btn{
+    background-color: #38b2ac;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    width: 20%;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #358b86;
+}
+.grupo-input{
+    font-weight: bold;
+    font-size: 1.1rem;
+    max-width: 400px;
+    margin: 0 auto;
+     
+   
+    
+}
+.grupo-input [type="number"] {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 80%;
+    margin: 1rem auto;
+    border: none;
+    background-color: #f5fafc;
+   
+}
+@media (max-width: 850px){
+    #mi-formulario {
+        width: 70%;
+    
+    }
+ 
+    .grupo-input{
+        max-width: 300px;
+        text-align: center;
+    }
+   
+}
+
+.error{
+    background-color: #e9d6ce;
+    border: solid #e96443;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e96443;
+}
+.correcto {
+    background-color: #b6ebba;
+    border: 1px solid #358b86;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #46c060;
+}
+
 /* menu */
+*{
+    padding: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 nav{
     background-color: #1d2951;
     line-height: 80px;
@@ -98,20 +125,20 @@ nav ul li a{
     font-size: 20px;
     padding: 6px 15px;
     font-weight: 600;
-    background-color:var(--secundario);
+    background-color:#358b86;
     border-radius: 3px;
     text-decoration: none;
   
 }
 nav ul li a:hover{
-    background-color:#9a24a5;;
+    background-color:#4b9490;;
     color: #ffffff;
     transition: 0.5s;
     text-decoration: none;
 }
 .aside-menu{
     
-    background-color: var(--secundario);
+    background-color: #38b2ac;
     width: 270px;
     height: 100%;
     position: fixed;
@@ -148,7 +175,7 @@ nav ul li a:hover{
     border: 3px solid #ffffff;
 }
 .aside-menu a:hover{
-    background: #298d91;
+    background: #96689c;
     padding-left: 10px;
     list-style: none;
     text-decoration: none;
@@ -167,7 +194,7 @@ nav ul li a:hover{
 .glyphicon-list{
     margin-left: 50px;
     cursor: pointer;
-    color: var(--secundario);
+    color: #358b86;
     font-size: 30px;
    
 }
@@ -177,7 +204,7 @@ nav ul li a:hover{
 .menu-bar{
     float: right;
     margin-top: 10px;
-    margin-right: -20px;
+    margin-right: -30px;
     
 }
 
@@ -202,9 +229,7 @@ nav ul li a:hover{
         font-size: 35px;
 
     }
-    .titulo{
-    margin-left: 100px;
-    }
+   
 }
 @media (max-width:650px) {
 
