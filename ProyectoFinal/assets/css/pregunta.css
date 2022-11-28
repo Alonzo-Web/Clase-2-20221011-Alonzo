@@ -36,6 +36,7 @@ h2 {
 }
 
 div img{
+    margin-left: 11%;
     margin-top: 4rem;
     width: 23%;
     border-radius: 5rem;
@@ -97,13 +98,13 @@ nav ul li a{
     font-size: 20px;
     padding: 6px 15px;
     font-weight: 600;
-    background-color: #3722f6;
+    background-color:var(--secundario);
     border-radius: 3px;
     text-decoration: none;
   
 }
 nav ul li a:hover{
-    background-color: #311bd6;
+    background-color:#9a24a5;;
     color: #ffffff;
     transition: 0.5s;
     text-decoration: none;
@@ -175,8 +176,8 @@ nav ul li a:hover{
 }
 .menu-bar{
     float: right;
-    margin-top: 8px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: -20px;
     
 }
 
