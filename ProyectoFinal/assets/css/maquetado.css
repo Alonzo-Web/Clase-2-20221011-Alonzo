@@ -5,7 +5,7 @@ html{
 }
 body{
     font-size: 16px;
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
 }
 .header{
@@ -46,6 +46,7 @@ body{
 }
 .conten{
     display: flex;
+    position: relative;
     gap: 0.5rem;
 }
 .sec1 {
@@ -76,160 +77,3 @@ aside [class="seccion3"]{
    align-items: center;
 }
 
-/* menu */
-
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-    text-decoration: none;
-}
-nav ul li{
-    line-height: 80px;
-    margin: 0 auto;
-}
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    padding: 6px 15px;
-    font-weight: 600;
-    background-color:#e4ee53;
-    border-radius: 3px;
-    text-decoration: none;
-  
-}
-nav ul li a:hover{
-    background-color:#9a24a5;;
-    color: #ffffff;
-    transition: 0.5s;
-    text-decoration: none;
-}
-.aside-menu{
-    
-    background-color:#ee53d4;
-    width: 270px;
-    height: 100%;
-    position: fixed;
-    right: 100%;
-    transition: all 500ms ease;
-    
-
-}
-.aside-menu center h2{
-    color: #ffffff;
-    margin-top: 5rem;
-    font-size: 2.5rem;
-}
-.link{
-    margin-top: 5rem;
-}
-.aside-menu a {
-    display: block;
-    line-height: 60px;
-    transition: 0.5s;
-    font-size: 20px;
-    text-decoration: none;
-
-}
-.aside-menu span{
-    font-size: 20px;
-    margin-left: 10px;
-    color: #ffffff;
-}
-.aside-menu center img{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-top: 30px;
-    border: 3px solid #ffffff;
-}
-.aside-menu a:hover{
-    background: #298d91;
-    padding-left: 10px;
-    list-style: none;
-    text-decoration: none;
-}
-.glyphicon-question-sign,
-.glyphicon-file,
-.glyphicon-th,
-.glyphicon-education{
-    font-size: 20px;
-    margin-left: 20px;
-    color: #ffffff;
-    
-  
-}
-/* ocultar menu */
-.glyphicon-list{
-    margin-left: 50px;
-    cursor: pointer;
-    color: #317c99;
-    font-size: 30px;
-   
-}
-#menu{
-    display: none;
-}
-.menu-bar{
-    float: right;
-    margin-top: 1px;
-    margin-right: -20px;
-    
-}
-
-@media (max-width:850px){
-
-    .aside-menu a span{
-        display: none;
-        
-    }
-
-    .aside-menu center{
-        display: none;
-    }
-    .aside-menu{
-        width: 100px;
-    }
-    .aside-menu a i{
-        display: block;
-        line-height: 150px;
-        text-align: center;
-        margin-left: 0;
-        font-size: 35px;
-
-    }
-    .titulo{
-    margin-left: 100px;
-    }
-}
-@media (max-width:650px) {
-
-    .aside-menu{
-        width: 100%;
-        text-align: center;
-        left: 100%;
-        background-color: #4c516d;
-        transition: all 0.5s;
-    }
-    .aside-menu a i{
-        display: none;
-    }
-    .aside-menu a span{
-        display: block;
-    }
-    nav .menu-bar{
-        display: block;
-        margin-right: 0px;
-    }
-    .aside-menu .inicio{
-        display: block;
-    }
-    nav ul{
-        display: none;
-    }
-   
-}
-#menu:checked ~ .aside-menu{
-    left: 0;
-
-}

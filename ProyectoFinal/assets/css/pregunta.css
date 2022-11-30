@@ -9,6 +9,7 @@
 
 }
 html {
+    background-color: var(--pirmario);
     box-sizing: border-box;
     font-size: 62.5%; /* se usa para que 1 rem = 10 px */
 }
@@ -16,9 +17,6 @@ html {
     box-sizing: inherit;
 }
 body {
-    background-color: var(--pirmario);
-    margin: 0;
-    padding: 0;
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
@@ -35,9 +33,7 @@ h2 {
     font-size: 5rem;
 }
 
-div img{
-    margin-left: 11%;
-    margin-top: 4rem;
+img{
     width: 23%;
     border-radius: 5rem;
     border: 1px solid var(--secundario);
@@ -76,164 +72,4 @@ li{
    margin: 0 auto;
    color: var(--blanco);
     
-}
-/* menu */
-nav{
-    background-color: #1d2951;
-    line-height: 80px;
-    width: 100%;
-    z-index: -1;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-    text-decoration: none;
-}
-nav ul li{
-    line-height: 80px;
-    margin: 0 auto;
-}
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    padding: 6px 15px;
-    font-weight: 600;
-    background-color:var(--secundario);
-    border-radius: 3px;
-    text-decoration: none;
-  
-}
-nav ul li a:hover{
-    background-color:#9a24a5;;
-    color: #ffffff;
-    transition: 0.5s;
-    text-decoration: none;
-}
-.aside-menu{
-    
-    background-color: var(--secundario);
-    width: 270px;
-    height: 100%;
-    position: fixed;
-    right: 100%;
-    transition: all 500ms ease;
-
-}
-.aside-menu center h2{
-    color: #ffffff;
-    margin-top: 5rem;
-    font-size: 2.5rem;
-}
-.link{
-    margin-top: 5rem;
-}
-.aside-menu a {
-    display: block;
-    line-height: 60px;
-    transition: 0.5s;
-    font-size: 20px;
-    text-decoration: none;
-
-}
-.aside-menu span{
-    font-size: 20px;
-    margin-left: 10px;
-    color: #ffffff;
-}
-.aside-menu center img{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-top: 30px;
-    border: 3px solid #ffffff;
-}
-.aside-menu a:hover{
-    background: #298d91;
-    padding-left: 10px;
-    list-style: none;
-    text-decoration: none;
-}
-.glyphicon-question-sign,
-.glyphicon-file,
-.glyphicon-th,
-.glyphicon-education{
-    font-size: 20px;
-    margin-left: 20px;
-    color: #ffffff;
-    
-  
-}
-/* ocultar menu */
-.glyphicon-list{
-    margin-left: 50px;
-    cursor: pointer;
-    color: var(--secundario);
-    font-size: 30px;
-   
-}
-#menu{
-    display: none;
-}
-.menu-bar{
-    float: right;
-    margin-top: 10px;
-    margin-right: -20px;
-    
-}
-
-@media (max-width:850px){
-
-    .aside-menu a span{
-        display: none;
-        
-    }
-
-    .aside-menu center{
-        display: none;
-    }
-    .aside-menu{
-        width: 100px;
-    }
-    .aside-menu a i{
-        display: block;
-        line-height: 150px;
-        text-align: center;
-        margin-left: 0;
-        font-size: 35px;
-
-    }
-    .titulo{
-    margin-left: 100px;
-    }
-}
-@media (max-width:650px) {
-
-    .aside-menu{
-        width: 100%;
-        text-align: center;
-        left: 100%;
-        background-color: #4c516d;
-        transition: all 0.5s;
-    }
-    .aside-menu a i{
-        display: none;
-    }
-    .aside-menu a span{
-        display: block;
-    }
-    nav .menu-bar{
-        display: block;
-        margin-right: 0px;
-    }
-    .aside-menu .inicio{
-        display: block;
-    }
-    nav ul{
-        display: none;
-    }
-   
-}
-#menu:checked ~ .aside-menu{
-    left: 0;
-
 }
